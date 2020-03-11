@@ -16,7 +16,9 @@ ok: OK
 save: Speichern
 decline: Nur essentielle Cookies akzeptieren
 close: Schließen
-acceptAll: Alle akzeptieren
+
+acceptSelected: Auswahl speichern
+acceptAll: Allen zustimmen
 app:
   disableAll:
     title: Alle Anwendungen aktivieren/deaktivieren
