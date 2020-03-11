@@ -108,7 +108,8 @@ $green3: #01440C;
             left: 0;
         }
 
-        .cm-modal {
+        .cm-modal,
+        .cookie-notice {
             z-index: 1001;
             box-shadow: $box-shadow;
 
@@ -174,7 +175,8 @@ $green3: #01440C;
                 }
             }
 
-            .cm-header {
+            .cm-header,
+            .cn-header {
                 padding: 1em;
                 padding-right: 24px;
                 border-bottom: $border-dark;
@@ -290,6 +292,12 @@ $green3: #01440C;
             p.cn-ok {
                 padding-top: 0.5em;
                 margin: 0;
+                display: flex;
+                flex-direction: column;
+
+                button {
+                    margin-bottom: 1rem;
+                }
             }
         }
 
