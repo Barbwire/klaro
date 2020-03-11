@@ -1,6 +1,6 @@
 /* globals module, require, VERSION */
 
-import 'scss/klaro.scss';
+// import 'scss/klaro.scss';
 
 // When webpack's hot loading is enabled, enable Preact's support for the
 // React Dev Tools browser extension.

@@ -96,8 +96,8 @@ export default class ConsentNotice extends React.Component {
                     </p>
                 {changesText}
                 <p className="cn-ok">
-                    {declineButton}
                     {acceptButton}
+                    {declineButton}
                     <a className="cm-link cm-learn-more" href="#" onClick={showModal}>{t(['consentNotice', 'learnMore'])}...</a>
                 </p>
             </div>

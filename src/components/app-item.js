@@ -29,7 +29,6 @@ export default class AppItem extends React.Component {
             </label>
             <div id={`${id}-description`}>
                 <p className="cm-app-description">{description || t([name, 'description'])}</p>
-                {purposesContent}
             </div>
         </div>
     }
