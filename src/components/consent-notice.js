@@ -43,7 +43,7 @@ export default class ConsentNotice extends React.Component {
     }
 
     render(){
-        const {config, show, manager, t} = this.props
+        const {config, show, manager, t, hide} = this.props
         const { modal, confirming } = this.state
 
         const purposes = getPurposes(config)
@@ -84,11 +84,16 @@ export default class ConsentNotice extends React.Component {
 
         if (modal || manager.confirmed || (!manager.confirmed && config.mustConsent))
             return <ConsentModal t={t} confirming={confirming} config={config} hide={hideModal} declineAndHide={this.declineAndHide} saveAndHide={this.saveAndHide} acceptAndHide={this.acceptAndHide} manager={manager} />
-        return <div className={`cookie-notice ${!noticeIsVisible ? 'cookie-notice-hidden' : ''}`}>
+        return <div className="cookie-modal">
+        <div className="cm-bg"/>
+        <div className={`cookie-notice ${!noticeIsVisible ? 'cookie-notice-hidden' : ''}`}>
+                <div className="cn-header">
+                    <h1 className="title">{t(['consentNotice', 'title'])}</h1>
+                </div>
             <div className="cn-body">
-                <p>
-                    {t(['consentNotice', 'description'], {purposes: <strong>{purposesText}</strong>})}
-                </p>
+                    <p>
+                        {t(['consentNotice','description'])} &nbsp;
+                    </p>
                 {changesText}
                 <p className="cn-ok">
                     {declineButton}
@@ -96,6 +101,6 @@ export default class ConsentNotice extends React.Component {
                     <a className="cm-link cm-learn-more" href="#" onClick={showModal}>{t(['consentNotice', 'learnMore'])}...</a>
                 </p>
             </div>
-        </div>
+        </div></div>
     }
 }

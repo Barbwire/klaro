@@ -1,21 +1,22 @@
 consentModal:
-  title: Informationen, die wir speichern
+  title: Datenschutzeinstellungen
   description: >
-    Hier können Sie einsehen und anpassen, welche Information wir über Sie speichern.
+      Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern.
   privacyPolicy:
     name: Datenschutzerklärung
     text: >
-      Weitere Details finden Sie in unserer {privacyPolicy}.
+      {privacyPolicy}
 consentNotice:
+  title: Datenschutzeinstellungen
   changeDescription: Es gab Änderungen seit Ihrem letzten Besuch, bitte aktualisieren Sie Ihre Auswahl.
   description: >
-    Wir speichern und verarbeiten Ihre personenbezogenen Informationen für folgende Zwecke: {purposes}.
+    Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern.
   learnMore: Mehr erfahren
 ok: OK
 save: Speichern
-decline: Ablehnen
+decline: Nur essentielle Cookies akzeptieren
 close: Schließen
-acceptAll: Allen zustimmen
+acceptAll: Alle akzeptieren
 app:
   disableAll:
     title: Alle Anwendungen aktivieren/deaktivieren
